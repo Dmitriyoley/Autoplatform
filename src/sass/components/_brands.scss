@@ -1,0 +1,27 @@
+.brands {
+   &__container {
+    overflow-x: hidden;
+    display: flex;
+
+    margin: 0 auto;
+    position: relative;
+    height: 40px;
+   }
+
+   &__slide {
+    display: flex;
+    position: relative;
+   }
+
+   &__logo {
+    position: absolute;
+    padding-right: 62px;
+    display: inline-block;
+
+    transition: left 3s linear;
+   }
+
+   &__logo > img {
+    width: 72px;
+   }
+}

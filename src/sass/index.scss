@@ -2,8 +2,25 @@
 @import './utilites/common';
 @import './utilites/vars';
 @import './components/servises';
+@import './components/brands';
 
 body {
   font-family: $font-main;
 }
+.container {
+  margin: 0 auto;
+  &-regular {
+    width: 1220px;
+  }
+}
 
+.button-yellow {
+  box-shadow: 4px 4px 0 $color-main-sky-blue;
+  background-color: $color-main-yellow;
+  color: black;
+  font-weight: 700;
+  padding: 16px 24px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}

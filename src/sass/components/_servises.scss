@@ -3,7 +3,7 @@
   color: white;
 
   &__container {
-    width: 1200px;
+    width: 1240px;
     margin: 0 auto;
     display: grid;
 
@@ -58,20 +58,6 @@
       &:last-of-type {
         margin-bottom: 36px;
       }
-    }
-
-    &--button {
-      box-shadow: 4px 4px 0 $color-main-sky-blue;
-      background-color: $color-main-yellow;
-      color: black;
-      font-weight: 700;
-
-      padding: 16px 24px;
-
-      text-transform: uppercase;
-      border: none;
-
-      cursor: pointer;
     }
   }
 }
