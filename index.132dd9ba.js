@@ -1,2 +1,0 @@
-document.getElementById("brandsGallery");const e=document.getElementById("brandsSlide").getElementsByClassName("brands__logo"),t=document.getElementsByClassName("brands__logo")[0].offsetWidth;for(let l=0;l<e.length;l++)e[l].style.left=l*t+"px";setInterval((()=>{for(let l=0;l<e.length;l++){const s=parseInt(e[l].style.left),n=s<0;e[l].style.left=s-t+"px",n?(e[l].style.visibility="hidden",e[l].style.left=(e.length-2)*t+"px"):e[l].style.visibility="visible"}}),3e3);
-//# sourceMappingURL=index.132dd9ba.js.map
