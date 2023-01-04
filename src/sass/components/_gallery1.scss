@@ -6,15 +6,16 @@
     background-color: black;
 
     @include onTablet {
-      grid-template-columns: repeat(5, 160px);
+      grid-template-columns: repeat(5, 1fr);
     }
 
     @include onMobile {
-      grid-template-columns: repeat(5, 72px);
+      grid-template-columns: repeat(5, 1fr);
     }
   }
 
   &__image {
-    width: auto;
+    max-height: 288px;
+    width: 100%;
   }
 }
