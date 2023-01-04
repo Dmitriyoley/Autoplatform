@@ -1,3 +1,5 @@
+@import '../utilites/mixins';
+
 .services {
   background-color: $background-color-dark-gray;
   color: white;
@@ -12,6 +14,24 @@
     grid-template-columns: repeat(2, 566px);
 
     column-gap: 66px;
+
+    @include onTablet {
+      width: 752px;
+
+      grid-template-columns: repeat(2, 364px);
+      column-gap: 24px;
+
+      padding: 48px 0;
+    }
+
+    @include onMobile {
+      width: 312px;
+      grid-template-columns: none;
+      grid-template-rows: 468px, 1fr;
+      row-gap: 32px;
+
+      padding: 48px 0;
+    }
   }
 
   &__info {
@@ -33,6 +53,11 @@
       margin: 0;
 
       font-weight: 400;
+
+      @include onMobile {
+        font-size: 24px;
+        line-height: 48px;
+      };
     }
 
     &--subheading {
@@ -44,6 +69,12 @@
       margin: 0 0 36px 0;
 
       margin-bottom: 36px;
+
+      @include onMobile {
+        margin: 0 0 24px 0;
+        font-size: 16px;
+        line-height: 19px;
+      };
     }
 
     &--paragraph {
@@ -51,13 +82,28 @@
 
       font-family: $font-secondary;
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 400;
 
       line-height: 21px;
 
       &:last-of-type {
         margin-bottom: 36px;
+
+        @include onMobile {
+          margin-bottom: 24px;
+        };
       }
+
+      @include onMobile {
+        font-size: 12px;
+        line-height: 16px;
+      };
+    }
+
+    &--button {
+      @include onMobile {
+        width: 100%;
+      };
     }
   }
 }
@@ -67,7 +113,18 @@
   font-size: 14px;
   line-height: 23px;
 
+  padding: 0;
+
   list-style: none;
+
+  @include onTablet {
+    font-size: 13px;
+    margin: 114px 0;
+  }
+
+  @include onMobile {
+    padding: 0;
+  };
 
   &__item {
     display: flex;
