@@ -3,6 +3,7 @@
 @import './utilites/vars';
 @import './components/servises';
 @import './components/brands';
+@import './components/gallery1';
 
 body {
   font-family: $font-main;
@@ -11,6 +12,10 @@ body {
   margin: 0 auto;
   &-regular {
     width: 1220px;
+  }
+
+  &-wide {
+    width: 100%;
   }
 }
 

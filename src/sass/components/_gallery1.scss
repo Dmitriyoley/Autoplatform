@@ -1,0 +1,20 @@
+.gallery {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    background-color: black;
+
+    @include onTablet {
+      grid-template-columns: repeat(5, 160px);
+    }
+
+    @include onMobile {
+      grid-template-columns: repeat(5, 72px);
+    }
+  }
+
+  &__image {
+    width: auto;
+  }
+}
