@@ -5,6 +5,7 @@
 @import './components/brands';
 @import './components/gallery1';
 @import './components/catalog';
+@import './components/process';
 
 body {
   font-family: $font-main;
@@ -23,7 +24,7 @@ body {
 }
 
 .button-yellow {
-  box-shadow: 4px 4px 0 $color-main-sky-blue;
+  box-shadow: $blue-box-shadow;
   background-color: $color-main-yellow;
   color: black;
   font-weight: 700;
