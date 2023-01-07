@@ -1,0 +1,38 @@
+.benefits {
+  background-color: $background-color-gray;
+  text-align: center;
+
+  padding: 88px 0;
+
+  &__heading {
+    margin: 0 auto;
+    text-align: center;
+
+    &-name {
+      font-size: 16px;
+      font-weight: 600;
+
+      color: #757981;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    margin-bottom: 48px;
+  }
+
+  &-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 32px 48px;
+
+    text-align: initial;
+
+    margin-right: 56px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
