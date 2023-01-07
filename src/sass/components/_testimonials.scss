@@ -1,0 +1,27 @@
+.testimonials {
+
+}
+
+.review {
+  &__container {
+    display: flex;
+  }
+
+  &__card {
+
+  }
+
+  &__image {
+
+  }
+
+  &__info {
+    padding: 32px 19px 32px 24px;
+    display: grid;
+    grid-template-columns: 1fr 263px;
+
+    &--icon {
+      filter: drop-shadow($blue-box-shadow)
+    }
+  }
+}
