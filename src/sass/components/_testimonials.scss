@@ -1,18 +1,49 @@
 .testimonials {
-
+  &__container {
+    padding: 88px 0;
+  }
 }
 
 .review {
   &__container {
     display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    @include onTablet {
+      margin: 0 24px;
+    }
+
+    @include onMobile {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__card {
+    box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.25);
 
+    @include onTablet {
+      margin-right: 24px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+
+    @include onMobile {
+      max-width: 312px;
+
+      margin-bottom: 24px;
+    }
   }
 
   &__image {
+    width: 100%;
 
+    @include onMobile {
+      max-width: 312px;
+    }
   }
 
   &__info {
@@ -20,8 +51,50 @@
     display: grid;
     grid-template-columns: 1fr 263px;
 
+    @include onTablet {
+      grid-template-columns: 51px 150px;
+      padding: 24px 16px;
+    }
+
+    @include onMobile {
+      grid-template-columns: 51px 1fr;
+      padding: 32px 24px;
+    }
+
     &--icon {
       filter: drop-shadow($blue-box-shadow)
     }
+  }
+}
+
+.info {
+  &__name {
+    margin: 0;
+
+    font-size: 14px;
+    color: $background-color-dark-gray;
+
+    font-family: $font-secondary;
+  }
+
+  &__text {
+    color: $color-gray;
+    margin: 0 0 16px 0;
+
+    @include onTablet {
+      font-size: 12px;
+    }
+
+    @include onMobile {
+      font-size: 12px;
+    }
+  }
+
+  &__date {
+    margin: 0;
+    font-size: 13px;
+    font-family: $font-secondary;
+    color: $color-gray;
+    font-style: italic;
   }
 }

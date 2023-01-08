@@ -35,3 +35,21 @@ body {
   border: none;
   cursor: pointer;
 }
+
+.section {
+  &__heading {
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 48px;
+    &-name {
+      font-size: 16px;
+      line-height: 16px;
+      margin: 0 0 18px 0;
+    }
+
+    &-desc {
+      font-size: 36px;
+    }
+  }
+}
