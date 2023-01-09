@@ -9,6 +9,7 @@
 @import './components/benefits';
 @import './components/testimonials';
 @import './components/statistics';
+@import './components/blogpreview';
 
 body {
   font-family: $font-main;
@@ -18,6 +19,14 @@ body {
   &-regular {
     margin: 0 auto;
    max-width: 1220px;
+
+   @include onTablet {
+    max-width: 744px;
+   }
+
+   @include onMobile {
+    max-width: 312px;
+   }
   }
 
   &-wide {
@@ -54,3 +63,4 @@ body {
     }
   }
 }
+
