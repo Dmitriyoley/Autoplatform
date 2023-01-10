@@ -1,0 +1,105 @@
+.contacts {
+  background-color: $background-color-dark-gray;
+
+  &__container {
+    display: flex;
+    padding: 96px 0;
+  }
+}
+
+.graphic {
+  padding-bottom: 16px;
+  border-bottom: 1px solid $color-main-yellow;
+
+  //&::after {
+  //  content: '';
+  //  width: 200px;
+  //  height: 1px;
+  //  position: absolute;
+  //  background-color: white;
+  //} need to add js to make yellow line responsive
+
+  &__heading {
+    font-size: 36px;
+    line-height: 40px;
+    margin: 0 0 16px 0;
+
+    color: white;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    color: $color-gray;
+    margin-bottom: 24px;
+  }
+
+  &__schedule{
+
+    display: flex;
+    align-items: center;
+    color: white;
+
+    &--image {
+      margin-right: 24px;
+    }
+
+    &--days  {
+      margin-right: 16px;
+    }
+
+    &--time {
+      margin-right: 24px;
+      font-weight: 700;
+    }
+
+    &--weekend {
+      font-weight: 700;
+    }
+  }
+
+  &--paragraph {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.ourcontacts {
+  padding-bottom: 16px;
+  border-bottom: 1px solid $color-main-yellow;
+
+  &__heading {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  &__description {
+    color: $color-gray;
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+
+    &--links {
+      display: flex;
+      flex-direction: column;
+
+      & > a {
+        color: white;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__mail {
+    display: flex;
+    align-items: center;
+
+    &--link {
+      color: white;
+      font-weight: 700;
+    }
+  }
+}
