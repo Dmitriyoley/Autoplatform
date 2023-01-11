@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
 @import './utilites/common';
 @import './utilites/vars';
+@import './utilites/main';
 @import './components/servises';
 @import './components/brands';
 @import './components/gallery1';
@@ -13,22 +14,30 @@
 @import './components/contacts';
 @import './components/header';
 
+
+
+
+
+
 body {
   font-family: $font-main;
+  font-size: 14px;
 }
+
 .container {
   margin: 0 auto;
+
   &-regular {
     margin: 0 auto;
-   max-width: 1220px;
+    max-width: 1220px;
 
-   @include onTablet {
-    max-width: 744px;
-   }
+    @include onTablet {
+      max-width: 744px;
+    }
 
-   @include onMobile {
-    max-width: 312px;
-   }
+    @include onMobile {
+      max-width: 312px;
+    }
   }
 
   &-wide {
@@ -42,7 +51,7 @@ body {
   background-color: $color-main-yellow;
   color: black;
   font-weight: 700;
-  padding: 16px 24px;
+  padding: 12px 16px;
   text-transform: uppercase;
   border: none;
   cursor: pointer;
@@ -54,6 +63,7 @@ body {
     text-align: center;
 
     margin-bottom: 48px;
+
     &-name {
       font-size: 16px;
       line-height: 16px;
@@ -65,4 +75,3 @@ body {
     }
   }
 }
-
