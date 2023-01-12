@@ -24,8 +24,4 @@ function brandsSlider () {
   }, 3000);
 }
 
-const phone = document.getElementById('phone');
-
-
-
 brandsSlider();
