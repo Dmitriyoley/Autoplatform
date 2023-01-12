@@ -5,6 +5,10 @@
     display: flex;
     padding: 96px 0;
   }
+
+  &__left {
+    margin-right: 96px;
+  }
 }
 
 .graphic {
@@ -72,15 +76,25 @@
     font-size: 36px;
     text-transform: uppercase;
     color: white;
+
+    margin: 48px 0 16px 0;
   }
 
   &__description {
     color: $color-gray;
+
+    margin-bottom: 16px;
   }
 
   &__phone {
     display: flex;
     align-items: center;
+
+    margin-bottom: 20px;
+
+    &--image {
+      margin-right: 24px;
+    }
 
     &--links {
       display: flex;
@@ -97,9 +111,40 @@
     display: flex;
     align-items: center;
 
+    margin-bottom: 20px;
+    &--image {
+      margin-right: 24px;
+    }
+
     &--link {
       color: white;
       font-weight: 700;
     }
+  }
+}
+
+.consult {
+  &__heading {
+    color: white;
+    font-size: 36px;
+    text-transform: uppercase;
+
+    margin: 0 0 24px 0;
+  }
+
+  &__description {
+    color: $color-gray;
+    margin: 0 0 48px 0;
+  }
+
+  &__form {
+    background-color: white;
+    padding: 32px;
+  }
+}
+
+.contact-form {
+  &__input {
+    display: block;
   }
 }

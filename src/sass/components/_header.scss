@@ -1,9 +1,14 @@
 .header {
     background-color: $background-color-dark-gray;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 4px 0px rgb(0 0 0 / 25%);
+    z-index: 10;
+    
     &__container {
         width: 1240px;
         margin: 0 auto;
-        
+
 
         display: flex;
         align-items: center;
@@ -52,7 +57,7 @@
             letter-spacing: 0.7px;
             color: white;
             text-decoration: underline;
-           
+
         }
     }
     &__social {
