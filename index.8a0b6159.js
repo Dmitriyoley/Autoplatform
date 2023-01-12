@@ -1,2 +1,0 @@
-!function(){document.getElementById("brandsGallery");for(var e=document.getElementById("brandsSlide").getElementsByClassName("brands__logo"),t=document.getElementsByClassName("brands__logo")[0].offsetWidth,l=0;l<e.length;l++)e[l].style.left=l*t+"px";setInterval((function(){for(var l=0;l<e.length;l++){var s=parseInt(e[l].style.left),i=s<0;e[l].style.left=s-t+"px",i?(e[l].style.visibility="hidden",e[l].style.left=(e.length-2)*t+"px"):"visible"!==e[l].style.visibility&&(e[l].style.visibility="visible")}}),3e3)}();
-//# sourceMappingURL=index.8a0b6159.js.map
