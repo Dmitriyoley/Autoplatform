@@ -4,6 +4,10 @@
   &__container {
     display: flex;
     padding: 96px 0;
+
+    @include onTablet {
+      flex-direction: column;
+    }
   }
 
   &__left {
