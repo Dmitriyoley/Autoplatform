@@ -1,3 +1,18 @@
+window.addEventListener('scroll', function() {
+  const header = document.getElementById('header');
+
+  if ((pageYOffset / 100) < 1) {
+    header.style.backgroundColor =  `rgba(28, 37, 44, ${pageYOffset / 100})`;
+    console.log(`rgba(28, 37, 44 / ${pageYOffset / 100})`);
+  } else {
+    header.style.backgroundColor =  'rgba(28, 37, 44, 1)';
+  }
+});
+
+window.addEventListener('load', () => {
+  header.style.backgroundColor =  'rgba(28, 37, 44, 1)';
+});
+
 function brandsSlider () {
   const brandsGallery = document.getElementById('brandsGallery');
   const brandsSlide = document.getElementById('brandsSlide');
@@ -24,4 +39,6 @@ function brandsSlider () {
   }, 3000);
 }
 
-document.addEventListener('load', brandsSlider());
+
+
+brandsSlider();

@@ -4,6 +4,14 @@
   &__container {
     display: flex;
     padding: 96px 0;
+
+    @include onTablet {
+      flex-direction: column;
+    }
+  }
+
+  &__left {
+    margin-right: 96px;
   }
 }
 
@@ -72,15 +80,25 @@
     font-size: 36px;
     text-transform: uppercase;
     color: white;
+
+    margin: 48px 0 16px 0;
   }
 
   &__description {
     color: $color-gray;
+
+    margin-bottom: 16px;
   }
 
   &__phone {
     display: flex;
     align-items: center;
+
+    margin-bottom: 20px;
+
+    &--image {
+      margin-right: 24px;
+    }
 
     &--links {
       display: flex;
@@ -97,9 +115,68 @@
     display: flex;
     align-items: center;
 
+    margin-bottom: 20px;
+    &--image {
+      margin-right: 24px;
+    }
+
     &--link {
       color: white;
       font-weight: 700;
     }
+  }
+}
+
+.consult {
+  &__heading {
+    color: white;
+    font-size: 36px;
+    text-transform: uppercase;
+
+    margin: 0 0 24px 0;
+  }
+
+  &__description {
+    color: $color-gray;
+    margin: 0 0 48px 0;
+  }
+
+  &__form {
+    background-color: white;
+    padding: 32px;
+  }
+}
+
+.contact-form {
+  &__label {
+    display: block;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    padding: 8px 0 8px 24px;
+    margin-bottom: 16px;
+
+    border : 2px solid #F6F6F7;
+  }
+
+  &__textarea {
+    display: block;
+    resize: none;
+    overflow-y: scroll;
+    width: 100%;
+    padding: 8px 0 8px 24px;
+    margin-bottom: 16px;
+
+    border : 2px solid #F6F6F7;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 0 0 auto;
   }
 }

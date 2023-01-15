@@ -22,6 +22,8 @@
 body {
   font-family: $font-main;
   font-size: 14px;
+
+  scroll-behavior: smooth;
 }
 
 .container {
