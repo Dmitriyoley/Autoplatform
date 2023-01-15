@@ -5,7 +5,7 @@
   "homepage": "https://Dmitriyoley.github.io/Autoplatform",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /Autoplatform/"
   },
   "repository": {
     "type": "git",
