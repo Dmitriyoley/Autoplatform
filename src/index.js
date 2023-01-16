@@ -86,13 +86,19 @@ const moveToNextSlide = () => {
 });
 
   slideContainer.addEventListener('mouseleave', startSlide);
-  buttonNext.addEventListener('click', moveToNextSlide);
-  buttonPrev.addEventListener('click', moveToPreviousSlide);
+  buttonNext.addEventListener('click', function() {
+    moveToNextSlide();
+    clearInterval(slideId);
+  });
+  buttonPrev.addEventListener('click', function() {
+    moveToPreviousSlide();
+    clearInterval(slideId);
+  });
   window.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'visible') {
       startSlide();
     } else {
-
+      clearInterval(slideId)
     }
   });
 
