@@ -9,7 +9,7 @@ window.addEventListener('scroll', function() {
 });
 
 window.addEventListener('load', () => {
-  header.style.backgroundColor =  'rgba(28, 37, 44, 1)';
+  
 });
 
 function heroSlider() {
@@ -30,16 +30,12 @@ function heroSlider() {
   firstClone.id = 'first-clone';
   lastClone.id = 'last-clone';
 
-  console.log(slides, slide)
-
   slide.append(firstClone);
   slide.prepend(lastClone);
 
   const slideWidth = slides[index].clientWidth;
 
   slide.style.transform = `translateX(${-slideWidth * index}px)`;
-
-  console.log(slides);
 
   const startSlide = () => {
     slideId = setInterval(() => {

@@ -1,6 +1,6 @@
 .hero {
   &__container {
-
+    overflow-x: hidden;
   }
 
   &__slides {
@@ -10,12 +10,30 @@
 
 .button {
   &__left {
-    top: 100px;
+    z-index: 10;
+    top: 376px;
+    left: 120px;
     position: absolute;
     transform: rotate(180deg);
+
+    transition: filter 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      filter: drop-shadow(-4px -4px #3da9f4);
+    }
   }
   &__right {
-    top: 200px;
+    z-index: 10;
+    top: 376px;
+    right: 120px;
     position: absolute;
+
+    transition: filter 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      filter: drop-shadow(-4px 4px #3da9f4);
+    }
   }
 }
