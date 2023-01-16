@@ -11,6 +11,9 @@ window.addEventListener('scroll', function() {
 window.addEventListener('visibilitychange', () => {
 });
 
+const map = document.getElementById('adressMap');
+map.width = '100%';
+
 function heroSlider() {
   const slideContainer = document.querySelector('.hero__container');
   const buttonPrev = document.querySelector('.button__left');
