@@ -1,0 +1,21 @@
+.hero {
+  &__container {
+
+  }
+
+  &__slides {
+    display: flex;
+  }
+}
+
+.button {
+  &__left {
+    top: 100px;
+    position: absolute;
+    transform: rotate(180deg);
+  }
+  &__right {
+    top: 200px;
+    position: absolute;
+  }
+}
