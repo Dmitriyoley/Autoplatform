@@ -14,6 +14,17 @@
     padding: 238px 0 212px 188px;
     width: 100vw;
     background-repeat: no-repeat;
+    background-size: cover;
+
+    @include onTablet {
+      padding: 176px 84px 212px 84px;
+    }
+
+    @include onMobile {
+      padding : 130px 52px 78px 52px;
+      text-align: center;
+    }
+
     &--text {
       margin: 0 0 36px 0;
       max-width: 712px;
@@ -22,26 +33,83 @@
       line-height: 80px;
       text-transform: uppercase;
       color: white;
+
+      @include onTablet {
+        font-size: 48px;
+        line-height: 68px;
+      }
+
+      @include onMobile {
+        font-size: 32px;
+        margin: 0 0 78px 0;
+      }
     }
   }
 
   &__pagination {
     position: absolute;
-    left: 50%;
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    left: 44%;
     bottom: 0;
     margin-bottom: 16px;
+
+    @include onMobile {
+      width: 30%;
+      left: 35%;
+      margin-bottom: 156px;
+    }
+
+    &--item {
+      display: none;
+    }
+
+    &--label {
+      position: relative;
+      display: inline-block;
+      box-sizing: border-box;
+
+      width: 10px;
+      height: 10px;
+      margin-right: 16px;
+      background-color: transparent;
+      border: 1px solid white;
+      border-radius: 50%;
+
+      &-checked {
+        background-color: $color-main-yellow;
+      }
+
+      &:last-child {
+        margin: 0;
+      }
+    }
   }
+}
+
+input[type="radio"]:checked+label {
+  background-color: $color-main-yellow;
 }
 
 .button {
   &__left {
-    z-index: 10;
-    top: 376px;
+    z-index: 2;
+    top: 50%;
     left: 120px;
     position: absolute;
     transform: rotate(180deg);
 
     transition: filter 0.3s;
+
+    @include onTablet {
+      left: 24px;
+    }
+
+    @include onMobile {
+      height: 24px;
+      left: 24px;
+    }
 
     &:hover {
       cursor: pointer;
@@ -49,12 +117,21 @@
     }
   }
   &__right {
-    z-index: 10;
-    top: 376px;
+    z-index: 2;
+    top: 50%;
     right: 120px;
     position: absolute;
 
     transition: filter 0.3s;
+
+    @include onTablet {
+      right: 24px;
+    }
+
+    @include onMobile {
+      height: 24px;
+      right: 24px;
+    }
 
     &:hover {
       cursor: pointer;
