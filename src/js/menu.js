@@ -3,7 +3,7 @@
     const mobileMenuRef = document.querySelector("[data-menu]");
     const body = document.querySelector("body");
   
-    menuBtnRef.addEventListener("click", () => {
+    menuBtnRef.addEventListener("click", () => { console.log(123)
       const expanded =
         menuBtnRef.getAttribute("aria-expanded") === "true" || false;
       menuBtnRef.classList.toggle("is-active");
