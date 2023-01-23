@@ -8,7 +8,8 @@ window.addEventListener('scroll', function() {
   }
 });
 
-window.addEventListener('visibilitychange', () => {
+window.addEventListener('onresize', () => {
+  console.log(123)
 });
 
 const map = document.getElementById('adressMap');
@@ -110,44 +111,24 @@ const moveToNextSlide = () => {
 
 heroSlider();
 
-function brandsSlider () {
-  const brandsGallery = document.getElementById('brandsGallery');
+function brandsSlider() {
+  setInterval(() => {
+
+  }, )
+  const brandContainer = document.getElementById('brandsGallery');
   const brandsSlide = document.getElementById('brandsSlide');
-  const slides = brandsSlide.getElementsByClassName('brands__logo');
-  const slideWidth = document.getElementsByClassName('brands__logo')[0].offsetWidth;
+  let brandsSlideCopy = document.getElementById('slideCopy');
 
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.left = i * slideWidth + 'px';
+  if (brandsSlideCopy === null) {
+    brandsSlideCopy = brandsSlide.cloneNode(true);
+    brandsSlideCopy.id = 'slideCopy';
+    brandContainer.appendChild(brandsSlideCopy);
   }
 
-  function brandsSliderStart () {
-    const int = setInterval(() => {
-      for (let i = 0; i < slides.length; i++) {
-        const styleOfFirstElement = parseInt(slides[i].style.left);
-        const isLessThenZero = (styleOfFirstElement < 0);
-        slides[i].style.left = styleOfFirstElement - slideWidth + 'px';
 
-        if(isLessThenZero) {
-          slides[i].style.visibility = 'hidden';
-          slides[i].style.left = ((slides.length - 2) * slideWidth) + 'px';
-        } else if (slides[i].style.visibility !== 'visible'){
-          slides[i].style.visibility = 'visible';
-        }
-      }
-    }, 3000);
 
-    window.addEventListener('visibilitychange', () => {
-      if (document.visibilityState === 'visible') {
-        brandsSliderStart()
-      } else {
-        clearInterval(int)
-      }
-    });
-  }
+  brandContainer.style.animationDuration = `${brandsSlide.childElementCount * 3}s`
 
-  brandsSliderStart();
 }
 
-
-
-brandsSlider();
+brandsSlider()

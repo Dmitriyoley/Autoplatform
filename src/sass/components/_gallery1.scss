@@ -10,7 +10,7 @@
     }
 
     @include onMobile {
-      grid-template-columns: repeat(5, 1fr);
+      display: none;
     }
   }
 
