@@ -112,9 +112,6 @@ const moveToNextSlide = () => {
 heroSlider();
 
 function brandsSlider() {
-  setInterval(() => {
-
-  }, )
   const brandContainer = document.getElementById('brandsGallery');
   const brandsSlide = document.getElementById('brandsSlide');
   let brandsSlideCopy = document.getElementById('slideCopy');

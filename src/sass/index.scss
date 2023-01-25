@@ -28,6 +28,10 @@ body {
   scroll-behavior: smooth;
 }
 
+.no_scroll {
+  overflow-y: hidden;
+}
+
 .container {
   margin: 0 auto;
 
