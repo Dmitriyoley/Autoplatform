@@ -19,7 +19,11 @@ function heroSlider() {
   slide.append(firstClone);
   slide.prepend(lastClone);
 
-  const slideWidth = slides[index].clientWidth;
+  let slideWidth = slides[index].clientWidth;
+
+  window.addEventListener('resize', function() {
+    slideWidth = slides[index].clientWidth;
+  })
 
   slide.style.transform = `translateX(${-slideWidth * index}px)`;
 
