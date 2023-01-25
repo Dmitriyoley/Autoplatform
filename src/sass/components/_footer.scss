@@ -1,0 +1,126 @@
+.footer {
+  background-color: $background-color-dark-gray;
+  color: white;
+  padding: 24px 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0 0 0;
+    border-top: 1px solid gray;
+
+    @include onTablet {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    @include onMobile {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__nav {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin: 0 0 0 0;
+
+    &--logo {
+      grid-column-start: 1;
+      grid-column-end: 2;
+
+      @include onMobile {
+        margin: 0 0 32px 0;
+      }
+    }
+
+    &--list {
+      display: flex;
+
+      @include onTablet {
+        justify-content: space-between;
+      }
+
+      @include onMobile {
+        flex-direction: column;
+      }
+    }
+
+    &--item {
+      &:not(:last-child) {
+        margin: 0 24px 0 0;
+      }
+
+      @include onMobile {
+        margin: 0 0 24px 0;
+
+        &:not(:last-child) {
+          margin: 0 0 24px 0;
+        }
+      }
+    }
+
+    &--link {
+      color: white;
+      font-weight: 700;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+
+    @include onTablet {
+      flex-direction: row-reverse;
+    }
+
+    &--item {
+      &:not(:last-child) {
+        margin-right: 24px;
+      }
+
+      @include onTablet {
+        &:not(:last-child) {
+          margin: 0 0 0 24px;
+        }
+      }
+    }
+  }
+
+  &__contact {
+    margin: 0;
+
+    @include onMobile {
+      margin: 0 0 42px 0;
+    }
+
+    &--tel {
+      display: flex;
+      align-items: center;
+      color: white;
+      font-weight: 700;
+      text-decoration: underline;
+
+      margin: 0;
+
+      @include onMobile {
+        &:first-child {
+          margin: 0 0 18px 0;
+        }
+      }
+    }
+  }
+
+  &__button {
+    margin: 0;
+
+    @include onMobile {
+      margin: 0 0 40px 0;
+    }
+  }
+}
