@@ -1,0 +1,1 @@
+{"mappings":"AAAYA,SAASC,eAAe,aAChCC,MAAQ","sources":["src/index.js"],"sourcesContent":["const map = document.getElementById('adressMap');\nmap.width = '100%';"],"names":["document","getElementById","width"],"version":3,"file":"index.bc73d127.js.map"}
