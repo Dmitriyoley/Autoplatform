@@ -1,0 +1,40 @@
+.modal {
+  &__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__content {
+    position: relative;
+    top: 30%;
+    background-color: $background-color-dark-gray;
+    padding: 32px 48px;
+
+    &--heading {
+      color: white;
+      display: flex;
+      text-transform: uppercase;
+
+      font-size: 36px;
+      align-items: center;
+      justify-content: space-between;
+
+      & > img {
+        width: 28px;
+        height: 28px;
+
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-form {
+    padding: 32px;
+    background-color: white;
+  }
+}

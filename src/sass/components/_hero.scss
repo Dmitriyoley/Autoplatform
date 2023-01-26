@@ -11,7 +11,7 @@
   }
 
   &__slide {
-    padding: 238px 0 212px 188px;
+    padding: 238px 0 312px 188px;
     width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
@@ -52,13 +52,13 @@
     justify-content: center;
     width: 15%;
     left: 44%;
-    bottom: 0;
+    bottom: 103px;
     margin-bottom: 16px;
 
     @include onMobile {
       width: 30%;
       left: 35%;
-      margin-bottom: 156px;
+      bottom: 163px;
     }
 
     &--item {
