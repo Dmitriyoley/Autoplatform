@@ -1,0 +1,2 @@
+var modal=document.getElementById("modal"),modalCloser=document.getElementById("modal-close"),modalOpener=document.querySelectorAll(".modalOpener");modalCloser.addEventListener("click",(function(){modal.style.display="none",document.body.style.overflow="scroll"})),modalOpener.forEach((function(e){e.addEventListener("click",(function(){modal.style.display="block",document.body.style.overflow="hidden"}))}));
+//# sourceMappingURL=index.6d9a38c8.js.map
