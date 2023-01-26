@@ -12,3 +12,26 @@
         body.classList.toggle("no-scroll");
     });
   })();
+
+  import burger from '../images/burger.png';
+  import cross from '../images/cross.png';
+
+  const menu = document.getElementById('menu-btn');
+  menu.innerHTML =
+    `<img src=${burger} />`
+  ;
+
+  menu.addEventListener('click', () => {
+
+  if (!menu.classList.contains('opened')) {
+    menu.classList.add('opened');
+    menu.innerHTML =
+    `<img src=${cross} />`
+
+  } else {
+    menu.classList.remove('opened');
+    menu.innerHTML =
+    `<img src=${burger} />`
+
+  }
+})
