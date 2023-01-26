@@ -23,6 +23,8 @@ function heroSlider() {
 
   window.addEventListener('resize', function() {
     slideWidth = slides[index].clientWidth;
+    moveToNextSlide();
+    clearInterval(slideId);
   })
 
   slide.style.transform = `translateX(${-slideWidth * index}px)`;
