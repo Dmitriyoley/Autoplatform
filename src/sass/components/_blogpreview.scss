@@ -111,7 +111,10 @@
 
     @include onTablet {
       max-width: 364px;
-      margin-right: 24px;
+
+      &:first-child {
+        margin-right: 24px;
+      }
     }
 
     @include onMobile {
@@ -159,7 +162,7 @@
 
   &__old {
     display: grid;
-    width: 326px;
+    width: 100%;
     grid-template-columns: 126px 1fr;
 
     padding-bottom: 24px;

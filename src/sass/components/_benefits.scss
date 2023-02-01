@@ -81,6 +81,7 @@
 
       @include onTablet {
         font-size: 20px;
+        line-height: 24px;
       }
 
       @include onMobile {
@@ -96,6 +97,7 @@
 
     @include onTablet {
       margin-right: 24px;
+      line-height: 21px;
     }
   }
 }
