@@ -1,0 +1,2 @@
+var phoneInput=document.getElementById("phone");function validatePhone(){}phoneInput.addEventListener("focus",(function(){phoneInput.value="+38  ("})),phoneInput.onkeydown=function(n){"Backspace"!==n.key?(9===phoneInput.value.length&&(phoneInput.value+=") "),14===phoneInput.value.length&&(phoneInput.value+=" - "),19===phoneInput.value.length&&(phoneInput.value+=" - ")):(11===phoneInput.value.length&&(phoneInput.value=phoneInput.value.slice(0,10)),16===phoneInput.value.length&&(phoneInput.value=phoneInput.value.slice(0,15)))};
+//# sourceMappingURL=index.38fa853e.js.map
