@@ -4,25 +4,6 @@ phoneInput.addEventListener('focus', () => {
   phoneInput.value = '+38  (';
 });
 
-document.onkeydown = function (e) {
-  console.log('key down');
-  console.log(e);
-};
-
-//phoneInput.addEventListener('input', () => {
-//  if (phoneInput.value.length === 9) {
-//    phoneInput.value += ') ';
-//  }
-//
-//  if (phoneInput.value.length === 14) {
-//    phoneInput.value += ' - '
-//  }
-//
-//  if (phoneInput.value.length === 19) {
-//    phoneInput.value += ' - '
-//  }
-//});
-
 phoneInput.onkeydown = (e) => {
   if (e.key !== 'Backspace') {
     if (phoneInput.value.length === 9) {

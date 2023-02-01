@@ -21,7 +21,7 @@
       grid-template-columns: repeat(2, 364px);
       column-gap: 24px;
 
-      padding: 224px 0;
+      padding: 0 0 64px 0;
     }
 
     @include onMobile {
@@ -29,8 +29,7 @@
       grid-template-columns: none;
       grid-template-rows: 468px, 1fr;
       row-gap: 32px;
-
-      padding: 488px 0;
+      padding: 144px 0;
     }
   }
 
