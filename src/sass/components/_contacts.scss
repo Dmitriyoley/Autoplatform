@@ -50,7 +50,7 @@
 
   &__heading {
     font-size: 36px;
-    line-height: 40px;
+    line-height: 48px;
     margin: 0 0 16px 0;
 
     color: white;
@@ -62,9 +62,14 @@
   }
 
   &__description {
+    font-family: $font-secondary;
     color: $color-gray;
-    margin-bottom: 24px;
+    margin: 0 0 24px 0;
+    font-size: 14px;
     line-height: 21px;
+
+    font-weight: 600;
+
   }
 
   &__schedule{
@@ -118,8 +123,10 @@
   }
 
   &__description {
+    font-family: $font-secondary;
     color: $color-gray;
     line-height: 21px;
+    font-weight: 600;
 
     margin-bottom: 16px;
   }
@@ -205,7 +212,8 @@
   }
 
   &__description {
-    color: $color-gray;
+    color: white;
+    font-size: 16px;
     line-height: 24px;
 
     margin: 0  0 36px 0;
@@ -227,6 +235,8 @@
     text-transform: uppercase;
     font-weight: 800;
     line-height: 24px;
+
+    font-size: 16px;
   }
 
   &__input {
@@ -236,6 +246,9 @@
     margin-bottom: 16px;
 
     border : 2px solid #F6F6F7;
+
+    font-size: 16px;
+    line-height: 24px;
   }
 
   &__textarea {
@@ -247,6 +260,8 @@
     margin-bottom: 16px;
 
     border : 2px solid #F6F6F7;
+
+    font-size: 16px;
   }
 
   &__button {

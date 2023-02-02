@@ -35,13 +35,12 @@
     margin: 0 0 8px 0;
     text-transform: uppercase;
     color: $color-black;
-    display: table-cell;
+    display: block;
 
     overflow-wrap: normal;
 
     @include onTablet {
       font-size: 20px;
-
     }
 
     @include onMobile {
