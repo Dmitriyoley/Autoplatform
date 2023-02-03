@@ -1,6 +1,10 @@
 const wholeHeader = document.getElementById('header');
 const burgerButton = document.getElementById('tabletBurger');
 const tabletHeader = document.getElementById('tablet');
+const tabletBurger = document.getElementById('tabletBurgerIcon');
+const tabletCross = document.getElementById('tabletCrossIcon');
+
+tabletCross.style.display = 'none';
 
 window.addEventListener('click', (event) => {
   if (!wholeHeader.contains(event.target) && tabletHeader.getAttribute('data-header') === 'opened') {
@@ -25,6 +29,8 @@ burgerButton.addEventListener('click', () => {
     document.body.style.overflow = 'hidden';
     tabletHeader.style.height = '192px'
     wholeHeader.style.backgroundColor = '#1b242b';
+    tabletBurger.style.display = 'none';
+    tabletCross.style.display = 'block';
     document.querySelectorAll('section').forEach (el => {
       el.style.filter = 'brightness(0.4)';
     })
@@ -32,6 +38,8 @@ burgerButton.addEventListener('click', () => {
     tabletHeader.setAttribute('data-header', 'closed');
     document.body.style.overflow = 'scroll'
     tabletHeader.style.height = '96px';
+    tabletBurger.style.display = 'block';
+    tabletCross.style.display = 'none';
     document.querySelectorAll('section').forEach (el => {
       el.style.removeProperty('filter');
     })
